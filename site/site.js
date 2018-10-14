@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-const apiKey = require('../db/key.json').googleApiKey;
+const apiKey = require('../db/googleapi.json').apiKey;
 
 const getLocation = async(address) => {
     let encUrl = encodeURI(`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${apiKey}`);
